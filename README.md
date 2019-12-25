@@ -190,6 +190,11 @@ b)去掉”匿名用户具有可读权限“的勾
 
  c)勾选Agent → Master Security下面的选项
 
+## 插件对应名称
+
+declarative Pipeline 对应的插件为 pipeline-model-definition
+pipeline对应的插件为workflow-aggregator
+
 ## License
 
 MIT (Expat) / BSD
