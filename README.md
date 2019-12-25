@@ -175,6 +175,21 @@ If you are running Jenkins behind a proxy server, configure these options approp
       become: yes
 ```
 
+## Todo
+
+安装好所有插件，再执行这些步骤
+ansible安装jenkins后，会有三个warning，下面操作会关闭这些warning。
+
+1.打开系统设置，点击保存
+
+2.打开全局安全配置
+
+a)勾选跨站请求伪造保护，勾选默认碎片生成器
+
+b)去掉”匿名用户具有可读权限“的勾
+
+ c)勾选Agent → Master Security下面的选项
+
 ## License
 
 MIT (Expat) / BSD
