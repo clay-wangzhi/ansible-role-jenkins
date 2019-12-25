@@ -1,0 +1,5 @@
+---
+__jenkins_pkg_url: https://mirrors.tuna.tsinghua.edu.cn/jenkins/redhat
+jenkins_init_file: /etc/sysconfig/jenkins
+jenkins_http_port_param: JENKINS_PORT
+jenkins_java_options_env_var: JENKINS_JAVA_OPTIONS

@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: geerlingguy,clay
+  description: Jenkins CI
+  company: "Midwestern Mac, LLC,Suncar"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.4
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+  galaxy_tags:
+    - development
+    - packaging
+    - jenkins
+    - ci
