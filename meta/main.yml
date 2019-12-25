@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: jenkins
   author: geerlingguy,clay
   description: Jenkins CI
   company: "Midwestern Mac, LLC,Suncar"
