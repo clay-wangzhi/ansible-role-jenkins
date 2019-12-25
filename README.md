@@ -2,6 +2,10 @@
 
 Installs Jenkins CI on RHEL/CentOS servers.
 
+根据`geerlingguy.jenkins`roles更改，主要更改了rpm包下载地址，和plugin下载源地址，
+
+更改为了国内的清华源。
+
 ## Requirements
 
 Requires `curl` to be installed on the server. Also, newer versions of Jenkins require Java 8+ (see the test playbooks inside the `molecule/default` directory for an example of how to use newer versions of Java for your OS).
