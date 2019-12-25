@@ -1,8 +1,6 @@
 # Ansible Role: Jenkins CI
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-jenkins.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-jenkins)
-
-Installs Jenkins CI on RHEL/CentOS and Debian/Ubuntu servers.
+Installs Jenkins CI on RHEL/CentOS servers.
 
 ## Requirements
 
@@ -117,18 +115,63 @@ Changes made to the Jenkins init script; the default set of changes set the conf
 
 If you are running Jenkins behind a proxy server, configure these options appropriately. Otherwise Jenkins will be configured with a direct Internet connection.
 
-## Dependencies
-
-  - geerlingguy.java
-
 ## Example Playbook
 
 ```yaml
+---
 - hosts: jenkins
   vars:
-    jenkins_hostname: jenkins.example.com
+    jenkins_version: "2.210"
+    jenkins_plugins: [
+      "ansible",
+      "ansicolor",
+      "antisamy-markup-formatter",
+      "authentication-tokens",
+      "authorize-project",
+      "blueocean",
+      "branch-api",
+      "build-timeout",
+      "build-timestamp",
+      "cloudbees-folder",
+      "credentials-binding",
+      "docker-commons",
+      "docker-workflow",
+      "email-ext",
+      "git",
+      "github-branch-source",
+      "gitlab-plugin",
+      "git-server",
+      "gradle",
+      "ldap",
+      "localization-zh-cn",
+      "mailer",
+      "matrix-auth",
+      "maven-plugin",
+      "pam-auth",
+      "pipeline-build-step",
+      "pipeline-github-lib",
+      "pipeline-graph-analysis",
+      "pipeline-input-step",
+      "pipeline-maven",
+      "pipeline-milestone-step",
+      "pipeline-model-api",
+      "pipeline-model-declarative-agent",
+      "pipeline-model-definition",
+      "pipeline-rest-api",
+      "pipeline-stage-step",
+      "pipeline-stage-tags-metadata",
+      "pipeline-stage-view",
+      "ssh-slaves",
+      "subversion",
+      "timestamper",
+      "workflow-aggregator",
+      "workflow-multibranch",
+      "ws-cleanup"
+    ]
+    jenkins_admin_username: admin
+    jenkins_admin_password: 123456
   roles:
-    - role: geerlingguy.jenkins
+    - role: clay_wangzhi.jenkins
       become: yes
 ```
 
@@ -139,3 +182,5 @@ MIT (Expat) / BSD
 ## Author Information
 
 This role was created in 2014 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
+
+Updated by clay at 2019.
