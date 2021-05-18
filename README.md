@@ -2,9 +2,11 @@
 
 Installs Jenkins CI on RHEL/CentOS servers.
 
-根据`geerlingguy.jenkins`roles更改，主要更改了rpm包下载地址，和plugin下载源地址，
+根据`geerlingguy.jenkins`roles更改，主要更改有：
 
-更改为了国内的清华源。
+* 更改了rpm包下载地址，和plugin下载源地址，更改为了国内的清华源
+* 增加了常用的插件
+* readme 中增加安装完成后的优化，拉到下面可以看到
 
 ## Requirements
 
