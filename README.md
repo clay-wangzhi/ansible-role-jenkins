@@ -184,7 +184,7 @@ If you are running Jenkins behind a proxy server, configure these options approp
 ## Todo
 
 安装好所有插件，再执行这些步骤
-ansible安装jenkins后，会有三个warning，下面操作会关闭这些warning。
+ansible 安装 jenkins 后，会有三个 warning，下面操作会关闭这些 warning。
 
 1.打开系统设置，点击保存
 
